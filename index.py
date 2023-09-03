@@ -60,7 +60,7 @@ LL.atbegin(10)
 LL.atmiddle(LL.head.next,14)
 LL.remove(3)
 LL.print()
-
+print("jghngs")
 '''Linkedlist END'''
 
 
