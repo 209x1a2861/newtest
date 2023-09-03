@@ -7,8 +7,11 @@ def model():
     return model
 def results():
     mod=model()
-    results=mod.predict(source="0",show=True)
-    print(results)
+    results=mod(source="0")
+    frame=results[0].plot()
+    cv2.imshow("frame",frame)
+    frame.save("output.jpg")
+    
 
 if __name__== "__main__":
     p1=threading.Thread(target=model)

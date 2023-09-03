@@ -11,6 +11,9 @@ def connect():
         print("db connected!")
     except Exception as e:
         print("error occured",e)
-connect()
+        
+    return conn,cursor
 
+
+s=connect()
         
